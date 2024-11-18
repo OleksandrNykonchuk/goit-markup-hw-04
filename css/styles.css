@@ -1,0 +1,283 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  background-color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  line-height: 1.17;
+  margin-right: 76px;
+}
+
+.logo-header-blue {
+  color: #2e2f42;
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #404bbf;
+}
+
+.contacts.link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434455;
+  display: flex;
+}
+.site-nav-address {
+  margin-left: auto;
+}
+.contacts {
+  gap: 40px;
+}
+.site-nav .contacts.link:hover,
+.site-nav .contacts.link:focus {
+  color: #404bbf;
+}
+
+.hero {
+  color: #ffffff;
+  background-color: #2e2f42;
+  text-align: center;
+  padding: 188px 0;
+}
+
+.section-banner-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.btn-banner {
+  background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .btn-banner:hover,
+.hero .btn-banner:focus {
+  background-color: #404bbf;
+}
+.section-features {
+  padding: 120px 0;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.example-header {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.feature-item {
+  width: calc((100% - 72px) / 4);
+}
+.team__list {
+  display: flex;
+  gap: 24px;
+}
+.section-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.card-title {
+  font-weight: 500; /* Виправлено для заголовків */
+  font-size: 20px; /* Розмір шрифту */
+  line-height: 1.2; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #2e2f42; /* Колір тексту */
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team__wrapper {
+  padding: 32px 0;
+}
+.section-team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-weight: 400;
+  text-align: center;
+}
+.section-list {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.gallery-list-title {
+  font-weight: 500; /* Виправлено для заголовків */
+  font-size: 20px; /* Розмір шрифту */
+  line-height: 1.2; /* Висота рядка */
+  letter-spacing: 0.02em; /* Відстань між літерами */
+  color: #2e2f42; /* Колір тексту */
+  margin-bottom: 8px;
+}
+.gallery-list-text {
+  color: #434455;
+}
+
+.section-address {
+  color: #e7e9fc;
+  background-color: #2e2f42; /* Фоновий колір футера */
+  padding: 100px 0;
+}
+.nav-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.logo-footer {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.gallery__image {
+  width: calc((100% - 48px) / 3);
+}
+.gallery__wrapper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+.logo-header-white {
+  color: #f4f4fd; /* Колір тексту */
+}
+.footer-text {
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.footer__logo-white {
+  color: #f4f4fd;
+}
+.footer__logo-blue {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
