@@ -1,3 +1,4 @@
+/* Загальні стилі */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -7,6 +8,7 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -14,35 +16,40 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 img {
   display: block;
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
+/* Стилі для хедера і навігації */
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
-  border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-nav {
   display: flex;
   align-items: center;
 }
+
 .logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -83,6 +90,25 @@ img {
   color: #404bbf;
 }
 
+/* Стилі для першого елемента меню з класом 'task-link' */
+.task-link {
+  position: relative; /* Вимога для відносного позиціонування */
+  color: #404bbf; /* Встановлення специфічного кольору */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для зміни кольору */
+}
+
+.task-link:after {
+  content: " "; /* Порожній контент для псевдоелемента */
+  position: absolute;
+  width: 100%; /* Повна ширина */
+  height: 4px; /* Встановлення висоти */
+  left: 0; /* Вирівнювання по лівому краю */
+  bottom: -1px; /* Позиція на 1px нижче елемента */
+  background-color: #404bbf; /* Колір фону */
+  border-radius: 2px; /* Закруглені кути */
+}
+
+/* Плавний перехід для контактних посилань */
 .contacts.link {
   font-family: Roboto;
   font-size: 16px;
@@ -92,13 +118,18 @@ img {
   text-align: left;
   color: #434455;
   display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід */
 }
+
 .site-nav-address {
   margin-left: auto;
 }
+
 .contacts {
   gap: 40px;
 }
+
+/* Ефект при наведенні для контактних посилань */
 .site-nav .contacts.link:hover,
 .site-nav .contacts.link:focus {
   color: #404bbf;
