@@ -275,99 +275,99 @@ img {
 .team__icon {
   fill: #f4f4fd;
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
+/* Загальний стиль секції */
 .section-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-.gallery__link {
-  cursor: pointer;
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.gallery__link:hover,
-.gallery__link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+/* Загальний стиль заголовка */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.gallery__link:hover .gallery__overley-text,
-.gallery__link:focus .gallery__overley-text {
-  transform: translateY(0);
+/* Список галереї */
+.nav-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.gallery__wrapper {
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  padding: 32px 16px;
-}
-/* Список елементів */
+/* Елементи галереї */
 .gallery__image {
+  flex: 1 1 calc(33.33% - 20px);
   position: relative;
-  overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc((100% - 48px) / 3);
+  max-width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Тінь при наведенні */
 .gallery__image:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Контейнер для зображення */
+/* Посилання в елементах */
+.gallery__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Обгортка для зображення */
 .gallery__overley-wrapper {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
-/* Параграф усередині контейнера */
+.gallery__overley-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Текст поверх зображення */
 .gallery__overley-text {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-cloud, #f4f4fd);
-  padding: 40px 32px;
-  background-color: var(--color-iris, #4d5ae5);
   width: 100%;
-  height: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease;
 }
 
-/* Анімація при ховері */
 .gallery__image:hover .gallery__overley-text {
   transform: translateY(0%);
 }
 
-.gallery__title {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+/* Текст і заголовок під зображенням */
+.gallery__wrapper {
+  text-align: center;
+  margin-top: 10px;
 }
+
 .gallery-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.gallery-list-text {
+  font-size: 14px;
+  color: #666;
 }
 
 .gallery-list-text {
