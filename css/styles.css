@@ -316,7 +316,11 @@ img {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.nav-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
 .gallery__link:hover,
 .gallery__link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
