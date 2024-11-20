@@ -287,17 +287,13 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.gallery-list-title {
-  font-weight: 500; /* Виправлено для заголовків */
-  font-size: 20px; /* Розмір шрифту */
-  line-height: 1.2; /* Висота рядка */
-  letter-spacing: 0.02em; /* Відстань між літерами */
-  color: #2e2f42; /* Колір тексту */
-  margin-bottom: 8px;
+
+/* General Classes for Overlay */
+.gallery__overley-wrapper {
+  position: relative;
+  overflow: hidden;
 }
-.gallery-list-text {
-  color: #434455;
-}
+
 .gallery__overley-text {
   position: absolute;
   top: 0;
@@ -305,14 +301,16 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud, #f4f4fd);
   padding: 40px 32px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  background-color: var(--color-iris);
+  background-color: var(--color-iris, #4d5ae5);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--color-cloud);
 }
+
 .gallery__link {
   cursor: pointer;
   display: block;
@@ -324,18 +322,29 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.gallery__overley-wrapper {
-  position: relative;
-  overflow: hidden;
+
+.gallery__link:hover .gallery__overley-text,
+.gallery__link:focus .gallery__overley-text {
+  transform: translateY(0%);
 }
+
 .gallery__wrapper {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
 }
-.gallery__link:hover .gallery__overley-text,
-.gallery__link:focus .gallery__overley-text {
-  transform: translateY(0);
+
+.gallery-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-title, #2e2f42);
+  margin-bottom: 8px;
+}
+
+.gallery-list-text {
+  color: var(--color-subtitle, #434455);
 }
 .section-address {
   color: #e7e9fc;
