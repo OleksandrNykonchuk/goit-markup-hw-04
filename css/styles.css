@@ -324,7 +324,15 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.gallery__overley-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__wrapper {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
 .gallery__link:hover .gallery__overley-text,
 .gallery__link:focus .gallery__overley-text {
   transform: translateY(0);
