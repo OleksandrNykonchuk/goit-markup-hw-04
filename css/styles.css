@@ -239,7 +239,37 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+.team__list-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
 
+.team__item-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.team__link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__link-icon:hover,
+.team__link-icon:focus {
+  background-color: #404bbf;
+}
+
+.team__icon {
+  fill: #f4f4fd;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
