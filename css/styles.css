@@ -332,6 +332,8 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .gallery-list-title {
@@ -344,8 +346,11 @@ img {
 }
 
 .gallery-list-text {
-  color: var #434455;
+  color: #434455; /* Виправлено синтаксис */
+  font-size: 14px;
+  line-height: 1.4;
 }
+
 .section-address {
   color: #e7e9fc;
   background-color: #2e2f42; /* Фоновий колір футера */
