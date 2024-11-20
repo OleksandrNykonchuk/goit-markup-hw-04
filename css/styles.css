@@ -302,12 +302,12 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-cloud, #f4f4fd);
+  color: #f4f4fd;
   padding: 40px 32px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  background-color: var(--color-iris, #4d5ae5);
+  background-color: #4d5ae5;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -339,12 +339,12 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-title, #2e2f42);
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .gallery-list-text {
-  color: var(--color-subtitle, #434455);
+  color: #434455;
 }
 .section-address {
   color: #e7e9fc;
