@@ -294,23 +294,6 @@ img {
   overflow: hidden;
 }
 
-.gallery__overley-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  padding: 40px 32px;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  background-color: #4d5ae5;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .gallery__link {
   cursor: pointer;
   display: block;
@@ -329,7 +312,7 @@ img {
 
 .gallery__link:hover .gallery__overley-text,
 .gallery__link:focus .gallery__overley-text {
-  transform: translateY(0%);
+  transform: translateY(0);
 }
 
 .gallery__wrapper {
@@ -337,7 +320,29 @@ img {
   border-top: none;
   padding: 32px 16px;
 }
-
+.gallery__overley-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #f4f4fd;
+}
+.gallery__title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
 .gallery-list-title {
   font-weight: 500;
   font-size: 20px;
