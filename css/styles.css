@@ -275,7 +275,7 @@ img {
 .team__icon {
   fill: #f4f4fd;
 }
-/* Загальні стилі */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -289,7 +289,6 @@ img {
   margin-bottom: 40px;
 }
 
-/* Список */
 .nav-gallery {
   display: flex;
   flex-wrap: wrap;
