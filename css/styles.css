@@ -217,11 +217,11 @@ img {
   padding: 120px 0;
 }
 .card-title {
-  font-weight: 500; /* Виправлено для заголовків */
-  font-size: 20px; /* Розмір шрифту */
-  line-height: 1.2; /* Висота рядка */
-  letter-spacing: 0.02em; /* Відстань між літерами */
-  color: #2e2f42; /* Колір тексту */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -314,7 +314,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Обгортка для зображення */
 .gallery__overley-wrapper {
   position: relative;
   overflow: hidden;
@@ -324,10 +323,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  /* Кути не заокруглені */
 }
 
-/* Текст поверх зображення */
 .gallery__overley-text {
   position: absolute;
   top: 0;
@@ -339,20 +336,19 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 30px 30px; /* Зменшено паддінги для більш точного відповідності макету */
+  padding: 30px 30px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: left; /* Текст тепер по лівому краю */
+  text-align: left;
 }
 
 .gallery__image:hover .gallery__overley-text {
   transform: translateY(0%);
 }
 
-/* Заголовок і текст під зображенням */
 .gallery__wrapper {
-  text-align: left; /* Текст тепер по лівому краю */
-  padding: 20px 20px; /* Паддінги зменшені для точнішого макету */
+  text-align: left;
+  padding: 20px 20px;
 }
 
 .gallery-list-title {
@@ -367,7 +363,7 @@ img {
 
 .section-address {
   color: #e7e9fc;
-  background-color: #2e2f42; /* Фоновий колір футера */
+  background-color: #2e2f42;
   padding: 100px 0;
 }
 
@@ -379,7 +375,7 @@ img {
   text-transform: uppercase;
 }
 .logo-header-white {
-  color: #f4f4fd; /* Колір тексту */
+  color: #f4f4fd;
 }
 .footer-text {
   color: #f4f4fd;
